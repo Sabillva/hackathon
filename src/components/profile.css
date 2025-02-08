@@ -202,7 +202,6 @@ body {
   color: #777;
 }
 
-/* Modal for Profile Edit */
 .modal {
   display: none;
   position: fixed;

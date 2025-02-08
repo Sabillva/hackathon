@@ -4,7 +4,6 @@ const Home = () => {
     <div className="home-container">
       <h2 className="home-title">EcoGo</h2>
 
-      {/* Top Leaders Section */}
       <section className="top-leaders">
         <h3 className="section-title">Top Leaders</h3>
         <div className="leader-circles">
@@ -26,7 +25,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Daily Task Progress Section */}
       <section className="daily-task-progress">
         <h3 className="section-title">Monthly Tasks Progress</h3>
         <div className="task-progress">
@@ -38,7 +36,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Points Balance Section */}
       <section className="points-balance">
         <h3 className="section-title">Points Balance</h3>
         <div className="balance-details">

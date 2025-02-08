@@ -133,15 +133,15 @@ body {
 }
 
 .points-changed.up {
-  color: #4caf50; /* Yaşıl */
+  color: #4caf50;
 }
 
 .points-changed.down {
-  color: #f44336; /* Qırmızı */
+  color: #f44336;
 }
 
 .points-changed.no-change {
-  color: #777; /* Solğun rəng, dəyişiklik olmadıqda */
+  color: #777;
 }
 
 @media (max-width: 768px) {

@@ -11,19 +11,18 @@ body {
 
 .navbar {
   position: fixed;
-  bottom: 0; /* Naviqasiyanı səhifənin altına yerləşdiririk */
+  bottom: 0;
   left: 0;
-  width: 100%; /* Naviqasiyanı tam genişlikdə edirik */
+  width: 100%;
   background-color: #333;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
   z-index: 1000; 
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Yüngül kölgə */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Hər bir düymə üçün stillər */
 .navbar button {
   color: white;
   background: none;
@@ -32,23 +31,20 @@ body {
   font-size: 16px;
   padding: 8px 16px;
   border-radius: 4px;
-  transition: all 0.3s ease; /* Hover və fokus animasiyası */
+  transition: all 0.3s ease;
 }
 
-/* Hover effektləri */
 .navbar button:hover {
-  color: #4ef079; /* Hover zamanı rəng dəyişir */
-  background-color: rgba(32, 100, 48, 0.1); /* Yüngül fon rəngi */
-  transform: translateY(-2px); /* Hover edərkən kiçik yuxarıya hərəkət */
+  color: #4ef079;
+  background-color: rgba(32, 100, 48, 0.1);
+  transform: translateY(-2px);
 }
 
-/* Aktiv düymənin rəngi */
 .navbar button.active {
-  color: #1c6720; /* Aktiv səhifə üçün rəng */
+  color: #1c6720;
   font-weight: bold;
 }
 
-/* Əsas səhifə üçün margin */
 .content {
-  padding-bottom: 60px; /* Naviqasiyanın üzərindən görünməməsi üçün */
+  padding-bottom: 60px;
 }

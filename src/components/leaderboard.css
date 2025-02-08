@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Ravio Regular";
+  src: local("Ravio Regular"),
+    url("../fonts/Ravio-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+body {
+  font-family: "Ravio Regular", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.leaderboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px;
+  text-align: center;
+}
+
+.leaderboard-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.switch-buttons {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.switch-buttons button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch-buttons button:hover {
+  background-color: #353535;
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.leaderboard-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .award-icons {
+    position: absolute;
+    top: -15px;
+    left: -10px; 
+    display: flex;
+    gap: 5px;
+    z-index: 2;
+  }
+  
+  .leaderboard-item-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+
+.leaderboard-item-details {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.leaderboard-item-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.leaderboard-item-points {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.position {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.position-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.award-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.gold,
+.silver,
+.bronze {
+  width: 35px;
+  height: 35px;
+}
+
+.points-changed {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.points-changed.up {
+  color: #4caf50; /* Yaşıl */
+}
+
+.points-changed.down {
+  color: #f44336; /* Qırmızı */
+}
+
+.points-changed.no-change {
+  color: #777; /* Solğun rəng, dəyişiklik olmadıqda */
+}
+
+@media (max-width: 768px) {
+  .leaderboard-list {
+    width: 100%;
+  }
+
+  .leaderboard-item {
+    width: 95%;
+  }
+
+  .switch-buttons button {
+    padding: 8px 15px;
+    font-size: 1rem;
+  }
+}

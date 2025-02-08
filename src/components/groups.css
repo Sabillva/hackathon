@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Ravio Regular";
+    src: local("Ravio Regular"),
+      url("../fonts/Ravio-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  
+  body {
+    font-family: "Ravio Regular", sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .groups-container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+  .create-group-container {
+    margin-bottom: 40px;
+  }
+  
+  .create-group-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .create-group-button:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.05);
+  }
+  
+  .create-group-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .create-group-modal div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-group-modal h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .create-group-modal input,
+  .create-group-modal textarea,
+  .create-group-modal select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .create-group-modal input:focus,
+  .create-group-modal textarea:focus,
+  .create-group-modal select:focus {
+    border-color: #4caf50;
+  }
+  
+  .create-group-modal button {
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .create-group-modal .create-group-submit:hover {
+    background-color: #45a049;
+  }
+
+  .create-group-modal .create-group-close:hover {
+    background-color: #d94b40;
+  }
+  
+  .create-group-modal .create-group-close {
+    margin-top: 10px;
+    background-color: #f44336;
+  }
+  
+  .groups-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .group-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .group-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .group-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .group-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .group-type,
+  .group-members {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .join-group-button {
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .join-group-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .create-group-button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  
+    .create-group-modal div {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .groups-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .group-card {
+      padding: 20px;
+    }
+  
+    .join-group-button {
+      padding: 10px 20px;
+    }
+  }
+  

@@ -1,0 +1,271 @@
+body {
+  font-family: "Ravio Regular";
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Ravio Regular";
+  src: local("Ravio Regular"),
+    url("../fonts/Ravio-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+.profile-container {
+  padding: 20px 35px;
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.profile-info h2 {
+  text-align: left;
+
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.profile-stats {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.profile-stats p {
+  margin: 5px 0;
+}
+
+.profile-name-points {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-name-points h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.profile-info p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.profile-address-count {
+  margin-top: 10px;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tab-button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+.tab-button:hover {
+  background-color: #353535;
+}
+
+.chart-container {
+  margin-top: 40px;
+  width: 374px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: 1px solid #bbbbbb;
+  padding: 20px;
+}
+.addresses {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 25px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.addresses h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.addresses ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.addresses li {
+  font-size: 14px;
+  color: #555;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 150px;
+}
+
+.addresses li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.addresses li span {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.activity {
+  margin-top: 40px;
+}
+
+.activity h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.activity ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.activity li {
+  list-style: none;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.activity li p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.activity li .date {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Modal for Profile Edit */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-header .close {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
+.modal-body input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.logout-button,
+.delete-account-button,
+.close-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.logout-button:hover,
+.delete-account-button:hover,
+.close-button:hover {
+  background-color: #353535;
+}

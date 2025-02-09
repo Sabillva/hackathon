@@ -1,4 +1,3 @@
-import "../fonts/Ravio-Regular.ttf";
 import React, { useState } from "react";
 import Navbar from "./Navbar.jsx";
 import Tasks from "./Tasks.jsx";

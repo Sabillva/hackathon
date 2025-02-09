@@ -1,15 +1,8 @@
 body {
-  font-family: "Ravio Regular";
+  font-family: "Poppins";
   background-color: #f4f4f9;
   margin: 0;
   padding: 0;
-}
-
-@font-face {
-  font-family: "Ravio Regular";
-  src: local("Ravio Regular"),
-    url("../fonts/Ravio-Regular.ttf") format("truetype");
-  font-weight: 400;
 }
 
 .profile-container {

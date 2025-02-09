@@ -37,9 +37,6 @@ const Profile = () => {
     <div className="profile-container">
       <div className="profile-header">
         <h1>Profile</h1>
-        <button className="settings-icon" onClick={handleModalToggle}>
-          ⚙️
-        </button>
       </div>
 
       <div className="profile-details">
@@ -48,10 +45,10 @@ const Profile = () => {
             <img src={User} alt="user" />
           </div>
           <div className="profile-info">
-            <h2>John Doe</h2>
+            <h2>Jane Doe</h2>
             <div className="profile-stats">
               <p>Points: 500</p>
-              <p>Address Count: 3</p>
+              <p>Achivement Count: 3</p>
             </div>
           </div>
         </div>

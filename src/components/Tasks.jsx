@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 const Tasks = () => {
   const [tasks, setTasks] = useState([
-    { id: 1, text: "Tullantıları təkrar emal et", points: 10, completed: false, media: null },
-    { id: 2, text: "10 ağac ək", points: 20, completed: false, media: null },
-    { id: 3, text: "Plastik istifadəsini azalt", points: 15, completed: false, media: null },
-    { id: 4, text: "İctimai nəqliyyatdan istifadə et", points: 5, completed: false, media: null },
-    { id: 5, text: "Xüsusi Task: Su israfını minimuma endir", points: 50, completed: false, media: null, special: true }
+      { "id": 1, "text": "Recycle waste", "points": 10, "completed": false, "media": null },
+      { "id": 2, "text": "Plant 10 trees", "points": 20, "completed": false, "media": null },
+      { "id": 3, "text": "Reduce plastic usage", "points": 15, "completed": false, "media": null },
+      { "id": 4, "text": "Use public transportation", "points": 5, "completed": false, "media": null },
+      { "id": 5, "text": "Special Task: Minimize water waste", "points": 50, "completed": false, "media": null, "special": true }
   ]);
 
   const completedTasks = tasks.filter(task => task.completed).length;
